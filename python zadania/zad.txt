@@ -1,0 +1,8 @@
+import re
+tekst = """tekst zawiera kod PIn 9765 karty bankomatwoej. Zapomniałes jak szybko go znaleść?"""
+
+sciezka = r'\d\d\d\d' # to jest wyrazenie regularne
+dopasowane = re.search(sciezka,tekst)
+if dopasowanie:
+number = dopasowanie.group()
+print numer
